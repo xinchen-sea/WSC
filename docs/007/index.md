@@ -1,3 +1,7 @@
+---
+level: secret
+---
+
 # :octicons-info-16:关于笔者
 
 ## 自述
