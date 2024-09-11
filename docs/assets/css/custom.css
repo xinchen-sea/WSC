@@ -1,0 +1,249 @@
+/* 文本居中 */
+.centered-text {
+    text-align: center;
+}
+
+.text-box1 {
+    border: 2px solid #000bff;
+    border-radius: 4px;
+    margin: auto auto;
+    display: inline-block;
+    width: 55% ;
+    text-align: center;
+}
+
+.text-box11 {
+    border: 2px solid #000bff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto auto;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.text-box2 {
+    border: 2px solid #000bff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px auto;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+}
+/* 获取屏幕宽度，以调整页面大小 */
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+/* 定义手写体
+@font-face {
+    font-family: "Oxygen";
+    src: url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap') format('woff2');
+}*/
+
+/*:root {
+  --md-text-font: "JetBrains Mono", "LXGW WenKai Screen";
+  --md-code-font: "JetBrains Mono";
+} */
+
+/* 自定义文字标题大小 */
+.md-typeset h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.md-typeset h2 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+}
+
+.md-typeset h5 {
+  font-size: 16px;
+}
+
+.md-typeset {
+  font-size: .7rem;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  letter-spacing: 0;
+}
+
+/* 除了<pre>元素内部的<code>元素之外的所有<code>元素，其字体大小继承父元素的字体大小*/
+.md-typeset code:not(pre code) {
+  font-size: inherit;
+}
+
+/* 版权申明的字体大小 */
+.md-copyright {
+  font-size: .55rem;
+}
+
+
+/* emoji表情垂直对齐方式为上标 */
+.md-typeset :is(.emojione,.twemoji,.gemoji) {
+  vertical-align: sub;
+}
+
+/* 修改主题颜色参数，有另外的设置
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #efefef;
+  --md-primary-bg-color: #000000;
+  --md-typeset-a-color: #555555;
+  --md-footer-fg-color: #000000;
+  --md-footer-bg-color: #efefef;
+  --md-footer-bg-color--dark: #efefef;
+  --md-footer-fg-color--light: #000000;
+  --md-footer-fg-color--lighter: #000000;
+  --md-code-bg-color: #fafafa;
+  --md-code-fg-color: var(--md-typeset-color);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #161616;
+  --md-default-bg-color--light: #161616;
+  --md-default-bg-color--lighter: #161616;
+  --md-default-bg-color--lightest: #161616;
+  --md-default-fg-color: rgba(255,255,255,0.9);
+  --md-default-fg-color--light: rgba(255,255,255,0.85);
+  --md-default-fg-color--lighter: rgba(255,255,255,0.8);
+  --md-default-fg-color--lightest: rgba(255,255,255,0.6);
+  --md-primary-fg-color: #0d0d0d;
+  --md-typeset-a-color: #d3d3d3;
+  --md-footer-fg-color: #fff;
+  --md-footer-bg-color: #0d0d0d;
+  --md-footer-bg-color--dark: #0d0d0d;
+  --md-footer-fg-color--light: #fff;
+  --md-footer-fg-color--lighter: #fff;
+  --md-code-bg-color: #1d1d1d;
+}*/
+
+/* 设定搜索框背景色
+input.md-search__input {
+  background-color: #999;
+}
+
+[data-md-color-scheme="slate"] input.md-search__input {
+    background-color: #333;
+}*/
+
+/* 页面背景色*/
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: #f8f8f8;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #2e2e2e;
+}
+
+/* 自定义页面背景颜色（包含侧边栏）
+.md-main {
+    background-color: #f4f4f4;
+}*/
+
+/* 内容区的颜色*/
+.md-content{
+    background-color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-content{
+    background-color: #000000;
+}
+
+
+
+/* 修改导航栏背景颜色
+.md-header {
+  background-color: #333; /* 你想要的颜色
+}
+
+/* 修改导航栏文字颜色
+.md-header__title, .md-header__button, .md-header__button md-icon {
+  color: #f40505; /* 你想要的颜色
+}
+
+/* 修改选项卡栏背景颜色
+.md-tabs {
+  background-color: #333; /* 你想要的背景颜色
+}
+
+/* 修改选项卡背景颜色
+.md-tabs__link {
+  background-color: #333; /* 你想要的背景颜色
+  color: #fff;           /* 你想要的文字颜色
+}
+
+/* 修改选项卡悬停和选中时的颜色
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  background-color: #555; /* 你想要的背景颜色
+  color: #ff4081;         /* 你想要的文字颜色
+}
+
+/* 修改选项卡边框颜色
+.md-tabs__link--active::before {
+  background-color: #ff4081; /* 你想要的边框颜色
+}*/
+
+/* 修改两侧目录文字颜色
+.md-nav__link {
+  color: #f40404; /* 你想要的颜色
+  background: #03a9f4;
+}
+
+/* 自定义 footer 的背景色和文字颜色
+.md-footer {
+    background-color: #333;  /* 设置 footer 的背景色
+    color: white;            /* 设置 footer 的文字颜色
+}*/
+
+/* 视频播放设置 */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-caption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+/*
+.md-typeset .admonition {
+    max-width: 300px;
+    margin: auto auto;
+}*/
+
+.text-container{
+    display: inline-flex;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+}

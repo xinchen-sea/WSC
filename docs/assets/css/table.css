@@ -1,0 +1,43 @@
+
+.table-indent {
+    padding-left: 40px; /*表格左缩进*/
+}
+
+
+/*使用外边距将表格居中*/
+    .custom-table-margin {
+        width: auto;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        margin: 0 auto; /* 将表格水平居中 */
+        table-layout: auto; /* 根据内容自动调整列宽 */
+    }
+
+    .custom-table-margin th, .custom-table-margin td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+/* 使用定位属性将表格固定在页面的特定位置 */
+    .custom-table-position {
+        width: auto;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        /*position: absolute; /* 使用绝对定位 */
+        /*top: 50px; /* 距离顶部 50 像素 */
+        /*left: 50px; /* 距离左侧 50 像素 */
+        position: relative; /* 使用相对定位 */
+        /*top: 50px; /* 相对于其正常位置向下移动 50 像素 */
+        /*left: 50px; /* 相对于其正常位置向右移动 50 像素 */
+        table-layout: auto; /* 根据内容自动调整列宽 */
+    }
+
+    .custom-table-position th, .custom-table-position td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
+

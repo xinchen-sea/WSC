@@ -1,0 +1,280 @@
+
+
+#info(信息)
+site_name: 尘心小站（The Website of Samuel Chan）
+site_author: xinchen-sea
+site_description: 喜欢螺旋式上升的真理
+site_url: "https://github.com/xinchen-truism/"
+
+# repository(库) information
+repo_name: 'xinchen-sea/Samuel Chan'
+repo_url: 'https://github.com/xinchen-sea/SamuelChan/'
+
+# 代码操作
+edit_uri: edit/main/docs/
+
+# copyright
+copyright: Copyright &copy; 2024-present <a href="https://github.com/xinchen-sea" target="_blank" rel="no-opener no-referrer">Samuel Chan</a>
+
+theme:
+  name: material
+  language: 'zh'
+  custom_dir: overrides
+  logo: assets/bql.ico   #logo
+  favicon: assets/bql.ico    #网站图标
+  # 调色板
+  palette:
+    # Palette（调色板） toggle for light mode(浅色模式)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # Palette toggle for dark mode（深色模式）
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+    # auto切换模式
+   # - media: "(prefers-color-scheme)"
+   #   toggle:
+   #     icon: material/link
+   #     name: Switch to light mode
+ 
+  #一些标签图标
+  icon:
+    previous: fontawesome/solid/angles-left  
+    next: fontawesome/solid/angles-right   # 页脚上/下页图标
+    edit: material/file-edit    #编辑当前页面
+    view: material/file-eye     #查看页面源
+    top: fontawesome/solid/angle-up #返回顶部按钮
+    # repo: fontawesome/brands/git-alt	#存储库图标
+    # logo: material/library  前面定义了logo。ico
+    admonition:  # 标注图标集
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: material/fire
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+
+  #字体，自定义字体，详见fonts.css
+  font: false  #取消使用Google字体，使用系统字体
+  # 功能添加
+  features:
+    # 导航栏功能
+    - navigation.instant
+    - navigation.instant.prefetch  # 即时预取
+    - navigation.tracking          # 锚点追踪
+    - toc.follow                   # 锚点跟随
+  #  - toc.integrate                # 左、右目录混合
+    - navigation.tabs              # 导航选项卡
+  # - navigation.tabs.sticky        # 将header和tabs粘连起来，需要配合navigation.tabs使用
+  #  - header.autohide              # 滑动隐藏标题
+    - navigation.expand            # 导航拓展，默认展开可折叠字部分
+    - navigation.top               # 提供回到页面顶部的按钮
+    - navigation.footer            # 在页面底部显示导航链接
+    - navigation.path              # 显示导航路径(开了顶部选项卡，不需要显示路径)
+    - navigation.indexes           # 带有章节索引页
+    # 页面内容操作
+    - content.action.edit    # 编辑页码源
+    - content.action.view    # 查看页码源
+    - content.code.annotate  # 选择代码复制
+    - content.code.copy      # 复制代码
+    - content.code.select    # 选择代码复制
+    - content.footnote.tooltips # 脚注工具提示
+    # - content.tabs.link
+    # 搜索功能设置
+    - search.highlight      # 搜索突出显示
+    - search.suggest        # 搜索建议
+    - search.share          # 搜索共享
+
+
+extra:
+  #cookie
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    analytics: Custom name
+    actions:
+      - accept
+      - manage
+  homepage: https://xinchen-sea.github.io/
+  #社交链接
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+    - icon: fontawesome/solid/rss
+      link: none
+    - icon: material/forum
+      link: https://www.cc98.org
+    - icon: fontawesome/solid/house
+      link: https://xinchen-sea.github.io/
+      
+  # 语言切换
+#  alternate:
+#    - name: English
+#      link: /en/
+#      lang: en
+#    - name: Chinese
+#      link: /zh/
+#      lang: zh
+
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+
+#插件
+plugins:
+  - privacy
+  - tags
+  - glightbox:
+  #    width: 80%
+  - search:
+      lang:
+        - zh
+        - en
+        - ja
+      separator: '[\s\u200b\-]'
+  #- git-revision-date-localized:
+   #   shortcode_type: datetime
+    #  timezone: Asia/Shanghai
+  #    locale: zh
+  #    enable_creation_date: true
+  #    exclude:
+  #      - index.md
+  - statistics:
+      words_per_minute: 200
+      codelines_per_minute: 80
+
+
+
+# Markdown扩展
+markdown_extensions:
+  - abbr             # 支持缩写
+  - footnotes        # 支持脚注
+  - tables           # 支持表格
+  - toc:
+      permalink: true  # 添加目录中的永久链接
+      toc_depth: 4     # 设置目录的深度为4级
+  - meta  # 处理元数据
+  - def_list    # 启用定义列表
+  - attr_list   # 启用HTML属性列表
+  - md_in_html  # 支持在HTML中使用Markdown语法
+  - sane_lists  # 对列表更合理的解析
+  - admonition  # 启用警告框和注意事项的语法
+  - pymdownx.keys  # 启用键盘键符号的语法扩展
+  - pymdownx.caret  #启用符号的语法拓展
+  - pymdownx.mark  # 启用标记的语法扩展
+  - pymdownx.tilde  # 启用波浪线的语法扩展
+  - pymdownx.critic  # 启用评论模式的语法扩展
+  - pymdownx.details  # 启用细节块的语法扩展
+  - pymdownx.snippets  # 启用代码片段的语法扩展
+  - pymdownx.magiclink  # 启用自动链接识别的语法扩展
+  - pymdownx.superfences  # 启用高级代码块的语法扩展
+  - pymdownx.inlinehilite  # 启用内联代码高亮的语法扩展
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.tabbed:
+      alternate_style: true  # 启用选项卡式组件，并使用替代样式
+  - pymdownx.tasklist:
+      custom_checkbox: true  # 启用任务列表自定义复选框样式
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true  # 启用代码高亮行号锚点
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true  # 启用数学公式支持，并使用通用渲染器
+  - pymdownx.superfences: # 图表支持
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# 自定义 css 扩展
+extra_css:
+  - 'assets/css/table.css'   # 表格设置
+  - 'assets/css/custom.css'  # 外观设置
+  - 'assets/css/switch.css'  # 按钮设置
+  #- 'assets/css/shortcodes.css'  # 自定义设置(不知道为啥用不了)
+  - 'assets/css/fold_toc.css' # toc折叠
+  - 'assets/css/heti.css' # 中文排版样式
+  - 'assets/css/counter.css' # 自定义标题顺序
+  - 'assets/css/galaxy.css'
+
+# 自定义 js 扩展
+extra_javascript:
+  - assets/js/mermaid.min.js
+  - assets/js/switch.js
+  - assets/js/click.js
+  - assets/js/titlechange.js
+  - assets/js/chase.js
+  - assets/js/mathjax.js
+  - assets/js/toc.js
+  - assets/js/heti.js
+  - assets/js/galaxy.js
+  - assets/js/canvas.js
+   # 支持数学公式，ref : https://squidfunk.github.io/mkdocs-material/reference/mathjax
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页:
+     - index.md
+     - 设置: settings.md
+     - 调试页: testpage.md
+  - 自述:
+     - 007/index.md
+  - 学习:
+     - learning/index.md
+     - 我卷吗: learning/juan/index.md
+     - 自学: none
+     - 大一:
+         - vjf: none
+         - 大雾: none
+  - 驾校:
+     - learning/drivinglicense/index.md
+     - 科目一: learning/drivinglicense/object1.md
+     - 科目四: learning/drivinglicense/object4.md
+  - 小作文:
+      - daily/index.md
+      - 大学生存指北: daily/guide.md
+      - 离合压不稳，练腿去: daily/7.22morning.md
+  - 备忘录:
+      - tools/index.md
+      - Markdown: tools/Markdown.md
+      - MkDocs: tools/mkdocs.md
+      - LaTex: tools/LaTex.md
+      - Obsidian: tools/Obsidian.md
+      - reveal.js: tools/reveal-js.md
+  - 酱酱小窝: pingjiangnaxin/jiangjiang.md
+  - 浙大生活指北: zhibei.md
+
+
+
+
+
