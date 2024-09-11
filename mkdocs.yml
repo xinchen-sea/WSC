@@ -165,7 +165,14 @@ plugins:
   - statistics:
       words_per_minute: 200
       codelines_per_minute: 80
-
+  - encryptcontent:
+      password_inventory:
+        secret: '007'
+      title_prefix: '[LOCK]'
+      summary: '页面比较害羞，拒绝您的直接访问'
+      placeholder: '密码你猜？'
+      decryption_failure_message: '不知道密码就不要查看了吧'
+      encryption_info_message: "请输入密码与页面取得弱神经连接"
 
 
 # Markdown扩展
