@@ -167,7 +167,7 @@ plugins:
       codelines_per_minute: 80
   - encryptcontent:
       password_inventory:
-        secret: '007'
+        secret: '2007'
       title_prefix: '[LOCK]'
       summary: '页面比较害羞，拒绝您的直接访问'
       placeholder: '密码你猜？'
