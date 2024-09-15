@@ -1,0 +1,237 @@
+/* * 部分节选自 material/overrides/assets/stylesheets/custom.7c86dd97.min.css
+   * 部分借助chatGPT生成
+   * 注释由 chatGPT 提供 */
+
+
+/* 为开关按钮定义样式 */
+.md-typeset .mdx-switch button {
+  /* 将鼠标指针设置为指针形状，表示该元素是一个可点击的按钮 */
+  cursor: pointer;
+  /* 设置透明度的过渡效果，持续时间为0.25秒 */
+  transition: background .25s, opacity .25s;
+}
+
+/* 定义当按钮处于获得焦点(点击)或被鼠标悬停时的样式 */
+.md-typeset .mdx-switch button:focus, .md-typeset .mdx-switch button:hover {
+    /* 将按钮的透明度设置为0.75，使按钮看起来略微透明 */
+  opacity: .75;
+}
+
+/* 为按钮内的 code 元素定义样式 */
+.md-typeset .mdx-switch button > code {
+  /* 设置 code 元素的背景颜色为 CSS 变量 --md-primary-fg-color 的值 */
+  background-color: var(--md-primary-fg-color);
+  /* 设置 code 元素的文本颜色为 CSS 变量 --md-primary-bg-color 的值 */
+  color: var(--md-primary-bg-color);
+  /* 将 code 元素的显示模式设置为 block，使其行为类似于块级元素 */
+  display: block;
+}
+
+.md-typeset .mdx-switch button > code:focus, .md-typeset .mdx-switch button > code:hover, .md-typeset .mdx-switch button > code:active{
+    background-color: var(--md-primary-bg-color);
+    color: var(--md-primary-fg-color);
+    opacity: .50;
+    display: block;
+}
+
+.md-typeset .mdx-switch button[data-md-color-accent] > code {
+    background-color: var(--md-accent-bg-color);
+    color: var(--md-accent-fg-color);
+    display: block;
+}
+
+.md-typeset .mdx-switch button[data-md-color-accent] > code:focus,
+.md-typeset .mdx-switch button[data-md-color-accent] > code:hover,
+.md-typeset .mdx-switch button[data-md-color-accent] > code:active{
+    background-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color);
+    opacity: .50;
+    display: block;
+}
+
+
+.md-typeset .bg-switch button {
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 2px 3px;
+    border: none;
+    border-radius: 4px;
+    transition: opacity .25s;
+}
+
+.md-typeset .bg-switch button:focus, .md-typeset .bg-switch button:hover {
+    opacity: .75;
+}
+
+/*定义一个按钮容器 */
+.btn-container {
+    margin-top: 20px;
+    background-color: var(--md-primary-fg-color--light);
+    border-radius: 10px;
+    backface-visibility: initial;
+}
+
+/* 按钮各自的背景色 */
+.btn-red { background-color: #f44336; color: white; }
+.btn-pink { background-color: #e91e63; color: white; }
+.btn-purple { background-color: #9c27b0; color: white; }
+.btn-deep-purple { background-color: #673ab7; color: white; }
+.btn-indigo { background-color: #3f51b5; color: white; }
+.btn-blue { background-color: #2196f3; color: white; }
+.btn-light-blue { background-color: #03a9f4; color: white; }
+.btn-cyan { background-color: #00bcd4; color: black; }
+.btn-teal { background-color: #009688; color: white; }
+.btn-green { background-color: #4caf50; color: white; }
+.btn-light-green { background-color: #8bc34a; color: black; }
+.btn-lime { background-color: #cddc39; color: black; }
+.btn-yellow { background-color: #ffeb3b; color: black; }
+.btn-amber { background-color: #ffc107; color: black; }
+.btn-orange { background-color: #ff9800; color: black; }
+.btn-deep-orange { background-color: #ff5722; color: white; }
+.btn-brown { background-color: #795548; color: white; }
+.btn-grey { background-color: #9e9e9e; color: black; }
+.btn-blue-grey { background-color: #607d8b; color: white; }
+.btn-black { background-color: #000000; color: white; }
+.btn-white { background-color: #ffffff; color: black; }
+.btn-default { background-color: #f3f3f3; color: black; }
+.btn-slate { background-color: #2e2e2e; color: white; }
+
+.btn-red:active { background-color: white; color: #f44336; }
+.btn-pink:active { background-color: white; color: #e91e63; }
+.btn-purple:active { background-color: white; color: #9c27b0; }
+.btn-deep-purple:active { background-color: white; color: #673ab7; }
+.btn-indigo:active { background-color: white; color: #3f51b5; }
+.btn-blue:active { background-color: white; color: #2196f3; }
+.btn-light-blue:active { background-color: white; color: #03a9f4; }
+.btn-cyan:active { background-color: black; color: #00bcd4; }
+.btn-teal:active { background-color: white; color: #009688; }
+.btn-green:active { background-color: white; color: #4caf50; }
+.btn-light-green:active { background-color: black; color: #8bc34a; }
+.btn-lime:active { background-color: black; color: #cddc39; }
+.btn-yellow:active { background-color: black; color: #ffeb3b; }
+.btn-amber:active { background-color: black; color: #ffc107; }
+.btn-orange:active { background-color: black; color: #ff9800; }
+.btn-deep-orange:active { background-color: white; color: #ff5722; }
+.btn-brown:active { background-color: white; color: #795548; }
+.btn-grey:active { background-color: black; color: #9e9e9e; }
+.btn-blue-grey:active { background-color: white; color: #607d8b; }
+.btn-black:active { background-color: white; color: #000000; }
+.btn-white:active { background-color: black; color: #ffffff; }
+.btn-default:active { background-color: black; color: #f3f3f3; }
+.btn-slate:active { background-color: white; color: #2e2e2e; }
+
+.btn-red:hover {
+    background-color: white;
+    color: #f44336;
+}
+
+.btn-pink:hover {
+    background-color: white;
+    color: #e91e63;
+}
+
+.btn-purple:hover {
+    background-color: white;
+    color: #9c27b0;
+}
+
+.btn-deep-purple:hover {
+    background-color: white;
+    color: #673ab7;
+}
+
+.btn-indigo:hover {
+    background-color: white;
+    color: #3f51b5;
+}
+
+.btn-blue:hover {
+    background-color: white;
+    color: #2196f3;
+}
+
+.btn-light-blue:hover {
+    background-color: white;
+    color: #03a9f4;
+}
+
+.btn-cyan:hover {
+    background-color: white;
+    color: #00bcd4;
+}
+
+.btn-teal:hover {
+    background-color: white;
+    color: #009688;
+}
+
+.btn-green:hover {
+    background-color: white;
+    color: #4caf50;
+}
+
+.btn-light-green:hover {
+    background-color: white;
+    color: #8bc34a;
+}
+
+.btn-lime:hover {
+    background-color: white;
+    color: #cddc39;
+}
+
+.btn-yellow:hover {
+    background-color: white;
+    color: #ffeb3b;
+}
+
+.btn-amber:hover {
+    background-color: white;
+    color: #ffc107;
+}
+
+.btn-orange:hover {
+    background-color: white;
+    color: #ff9800;
+}
+
+.btn-deep-orange:hover {
+    background-color: white;
+    color: #ff5722;
+}
+
+.btn-brown:hover {
+    background-color: white;
+    color: #795548;
+}
+
+.btn-grey:hover {
+    background-color: white;
+    color: #9e9e9e;
+}
+
+.btn-blue-grey:hover {
+    background-color: white;
+    color: #607d8b;
+}
+
+.btn-black:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.btn-white:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.btn-default:hover {
+    background-color: black;
+    color: #f3f3f3;
+}
+
+.btn-slate:hover {
+    background-color: white;
+    color: #2e2e2e;
+}
